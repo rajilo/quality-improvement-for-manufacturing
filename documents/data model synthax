@@ -1,0 +1,29 @@
+Table Manufacturing_Process as mp {
+  MachineID TEXT (PK)
+  ProductionBatchNumber TEXT [ref: > pp.ProductionBatchNumber]
+  OperatorID text
+  Start_End_Time DATETIME
+  Defect_Rate DECIMAL
+}
+
+Table Product as pp {
+  ProductID TEXT (PK)
+  ProductionBatchNumber TEXT (UNIQUE) // Ensuring unique batch numbers for better reference integrity
+  ProductName TEXT
+  Defect_Rate DECIMAL
+}
+
+Table Supplier as sp {
+  SupplierID TEXT (PK)
+  MaterialType TEXT
+  DeliveryDate DATE
+  BatchNumber TEXT [ref: > mp.ProductionBatchNumber]
+}
+
+Table Quality_Metric as qm {
+  QCBatchID TEXT (PK)
+  DefectType text
+  InspectionDate DATE
+  BatchNumber TEXT [ref: > pp.ProductionBatchNumber] // Corrected reference to ProductionBatchNumber in Product table
+  ActionTaken_ScrapOrRework TEXT
+}
