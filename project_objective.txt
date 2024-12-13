@@ -1,0 +1,134 @@
+Project Summary
+The Hardware Manufacturing Defect Analysis Pipeline is designed to leverage data-driven insights to detect defect patterns,
+identify root causes, and optimize manufacturing processes. By integrating IoT sensor data, production logs, and quality control reports,
+this project aims to enhance product quality and reduce production inefficiencies.
+
+
+	1.	IoT Sensors:
+	•	Purpose: Sensors installed on machinery and assembly lines provide real-time data about environmental conditions, machine performance, and product quality.
+	•	Examples:
+	•	Temperature, Pressure, Humidity, Vibration, Proximity, Flow, Optical sensors.
+	•	Format:
+	•	Time-series data (e.g., timestamp, sensor_id, value).
+	•	Source: Connected devices via platforms like AWS IoT, Azure IoT Hub.
+	2.	Production Logs:
+	•	Purpose: Logs from manufacturing execution systems (MES) detailing production activities.
+	•	Examples:
+	•	Assembly line ID, Batch number, Start/End times, Product count, Operator details.
+	•	Format:
+	•	Tabular CSV/JSON data exported from MES.
+	•	Source: MES platforms (e.g., Siemens Opcenter, Rockwell FactoryTalk).
+	3.	Defect Reports:
+	•	Purpose: Records of defects identified during or after production.
+	•	Examples:
+	•	Defect type, Severity, Resolution time, Root cause analysis reports.
+	•	Format:
+	•	CSV or relational database tables.
+	•	Source: Quality control systems or manual input systems.
+	4.	Machine Maintenance Logs:
+	•	Purpose: Track historical maintenance and breakdown data.
+	•	Examples:
+	•	Downtime logs, Resolved issues, Maintenance schedules.
+	•	Format:
+	•	Database tables or exported logs.
+	•	Source: Computerized Maintenance Management Systems (CMMS).
+	5.	SCADA Systems (Supervisory Control and Data Acquisition):
+	•	Purpose: Aggregate and control data from multiple factory devices.
+	•	Examples:
+	•	Real-time status, Alarms, Event logs.
+	•	Format:
+	•	JSON/XML streams or database exports.
+	•	Source: SCADA platforms like Wonderware or Ignition.
+	6.	ERP Systems (Enterprise Resource Planning):
+	•	Purpose: Business data related to supply chain and production orders.
+	•	Examples:
+	•	Orders, Materials used, Inventory levels.
+	•	Format:
+	•	SQL database or exported files.
+	•	Source: SAP, Oracle ERP Cloud.
+
+Key Components:
+
+	1.	Data Ingestion:
+	•	IoT sensor data, production logs, and quality control reports are ingested using AWS IoT Core and stored in Amazon S3.
+	•	The ingestion pipeline ensures data consistency, scalability, and real-time processing capabilities.
+	2.	Data Processing:
+	•	Data is processed and transformed using Apache Spark, enabling large-scale distributed computation.
+	•	This step involves cleaning, aggregating, and enriching the data to ensure readiness for analysis.
+	3.	Data Storage and Modeling:
+	•	A star schema design organizes the data for analytical processing:
+	•	Fact Table: Fact_Manufacturing_Defects records defect events and metrics.
+	•	Dimension Tables:
+	•	Dim_Assembly_Line: Details assembly lines, including location and shifts.
+	•	Dim_Device_Type: Describes devices, categories, and manufacturers.
+	•	Dim_Sensor: Stores information about IoT sensors, their types, and associated assembly lines.
+	•	Dim_Defect_Type: Categorizes defects by name, severity, and description.
+	•	Dim_Production_Batch: Tracks batch metadata such as timelines and product counts.
+	4.	Data Analysis and Insights:
+	•	Defect patterns are analyzed to identify trends and correlations.
+	•	Root cause analysis highlights critical areas for intervention, enabling proactive quality control.
+	5.	Outcome and Optimization:
+	•	Insights drive decision-making to enhance product quality and streamline manufacturing processes.
+	•	Historical defect data supports predictive analytics, aiding in preemptive maintenance and defect reduction.
+
+Benefits:
+
+	•	Efficiency: Real-time data processing reduces lag in detecting defects.
+	•	Scalability: Cloud-based infrastructure supports growing data volumes.
+	•	Accuracy: Enriched and structured data ensures high-quality insights.
+	•	Optimization: Analytical insights directly influence process improvements and cost savings.
+
+This project exemplifies the integration of data engineering, IoT technologies, and cloud computing to create a robust manufacturing defect analysis pipeline.
+
+Fact Table
+Fact_Manufacturing_Defects
+Captures defect events and their metrics.
+
+fact_id
+assembly_line_id
+device_type_id
+sensor_id
+defect_type_id
+defect_count
+defect_timestamp
+resolution_time_minutes
+production_batch_id
+Dimension Tables
+Dim_Assembly_Line
+Describes the assembly lines.
+
+assembly_line_id
+assembly_line_name
+location
+shift
+Dim_Device_Type
+Provides information about device types used in production.
+
+device_type_id
+device_name
+category
+manufacturer
+device_lifespan
+Dim_Sensor
+Details the IoT sensors collecting data.
+
+sensor_id
+sensor_name
+sensor_type
+assembly_line_id
+Dim_Defect_Type
+Categorizes and describes defects.
+
+defect_type_id
+defect_name
+severity
+description
+Dim_Production_Batch
+Tracks production batch metadata.
+
+production_batch_id
+batch_name
+start_time
+end_time
+product_count
+batch_status
