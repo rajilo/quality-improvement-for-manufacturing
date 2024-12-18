@@ -1,0 +1,358 @@
+[oh-my-zsh] Would you like to update? [Y/n] Y
+Updating Oh My Zsh
+master
+
+Features:
+
+ - 9991822 [bazel]     Add bzlmod integrity gen function (#12797)
+ - 6c91a5e [laravel]   Add alias for `optimize:clear` (#12793)
+ - 69a6359 [ngrok]     Add completion plugin (#12826)
+ - 081d704 [pyenv]     Add prompt customization (#12738)
+ - 1b9d6e5 [timoni]    Add completion plugin (#12802)
+ - 9ad764d [vault]     Re-introduce vault plugin (#12753)
+ - 366d254 [wd]        Update to v0.9.2 (#12820)
+
+Bug fixes:
+
+ - b5d5268 [dash]      Urlencode special parameters like `:` in query (#12811)
+ - 2e8d2d7 [pipenv]    Fix auto-shell functionality when cd-ing out (#12813)
+ - e636eeb [tailscale] Load completion when `tailscale` is an alias (#12726)
+
+You can see the changelog with `omz changelog`
+         __                                     __
+  ____  / /_     ____ ___  __  __   ____  _____/ /_
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
+                        /____/
+
+Hooray! Oh My Zsh has been updated!
+
+To keep up with the latest news and updates, follow us on X: https://x.com/ohmyzsh
+Want to get involved in the community? Join our Discord: https://discord.gg/ohmyzsh
+Get your Oh My Zsh swag at: https://shop.planetargon.com/collections/oh-my-zsh
+(venv) ➜  quality-improvement-for-manufacturing git:(models-setup) ✗ git status
+On branch models-setup
+Your branch is up to date with 'origin/models-setup'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   data_sample.py
+        new file:   project_objective.txt
+        new file:   tryingout.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   data_generation.py
+        modified:   data_sample.py
+        modified:   documents/requirements.txt
+        modified:   project_objective.txt
+        modified:   tryingout.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        csv/
+        upstreadm_data/
+        upstream_data/
+
+(venv) ➜  quality-improvement-for-manufacturing git:(models-setup) ✗ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+(venv) ➜  quality-improvement-for-manufacturing git:(models-setup) ✗ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+(venv) ➜  quality-improvement-for-manufacturing git:(models-setup) ✗ history
+    1  echo "# Data-pipeline-for-machine-operations" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/Data-pipeline-for-machine-operations.git\ngit push -u origin main
+    2    git config --global user.name "rajilo\"
+    3    git config --global user.name "rajilo"
+    4    git config --global user.email richardajiloo@gmail.com\n
+    5  echo "# Data-pipeline-for-machine-operations" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/Data-pipeline-for-machine-operations.git\ngit push -u origin main
+    6  git config --global user.name
+    7  git config user.email
+    8  git status
+    9  git status
+   10  git add .
+   11  git statud
+   12  git statu
+   13  git status
+   14  git commit -m "tests file"
+   15  git push
+   16    git push --set-upstream origin main
+   17    git push --set-upstream origin main
+   18    git push --set-upstream origin main
+   19    git push --set-upstream origin main
+   20  source ~/.zshrc
+   21  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\n
+   22  brew
+   23   echo >> /Users/richardajilo/.zprofile\n    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/richardajilo/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)
+   24  echo >> /Users/richardajilo/.zprofile\n    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/richardajilo/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"
+   25  brew
+   26  brew install python
+   27  python
+   28  python3
+   29  source ~/.zshrc
+   30  git add .
+   31  git commit -m "few changes"
+   32  git push
+   33  git checkout -b data-modeling-setup
+   34  git add .
+   35  git commit -m "data setup"
+   36  git push
+   37  git config --global user.name "rajilo"
+   38  git config --global user.email "bob@example.com"
+   39  git config --global user.email "richardajiloo@gmail.com"
+   40  git push
+   41  history
+   42  git status
+   43  git add .
+   44  git commit -m "setup"
+   45  git push
+   46  ls
+   47  cd ..
+   48  ls
+   49  mkdir data-project-week4
+   50  cd data-project-week4
+   51  ls
+   52  echo "# data-solutions" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/data-solutions.git\ngit push -u origin main
+   53  ls
+   54  clear
+   55  ls
+   56  cd Documents
+   57  ls
+   58  cd ..
+   59  ls
+   60  cd Desktop
+   61  mkdir projects
+   62  cd projects
+   63  ls
+   64  mkdir project1
+   65  cd project1
+   66  ls
+   67  git@github.com:richymufyenterprise/data-systems-machine.git
+   68  echo "# data-systems-machine" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:richymufyenterprise/data-systems-machine.git\ngit push -u origin main
+   69  ssh-keygen -t ed25519 -C “richardajiloo@gmail.com”\neval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519\npbcopy < ~/.ssh/id_ed25519.pub\n
+   70  ls
+   71  cat ~/.ssh/id_ed25519.pub
+   72  ssh-keygen -t ed25519 -C “richardajiloo@gmail.com”\neval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519\npbcopy < ~/.ssh/id_ed25519.pub\n
+   73  cat ~/.ssh/id_ed25519.pub
+   74  echo "# data-solutions" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/data-solutions.git\ngit push -u origin main
+   75  ls
+   76  cd ..
+   77  ls
+   78  rm -rf project1
+   79  ls
+   80  mkdir data-pipeline
+   81  cd data-pipeline
+   82  echo "# data-solutions" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/data-solutions.git\ngit push -u origin main
+   83  history
+   84  git checkout -b data-practice
+   85  git status
+   86  git add.
+   87  git add .
+   88  git status
+   89  git add .
+   90  git commit
+   91  git commit -m "data practice"
+   92  git push
+   93  virtualenv venv\n
+   94  pip install virtualenv\n
+   95  pip3 install virtualenv\n
+   96  virtualenv venv\n
+   97  source venv/bin/activate\n
+   98  git status
+   99  git add .
+  100  git commit -m "tests"
+  101  git push
+  102  git status
+  103  git pull
+  104  git status
+  105  git checkout -b week4
+  106  git status
+  107  git checkout -b week4_assignment
+  108  git status
+  109  source env/bin/activate
+  110  python3 -m venv data
+  111  source data/bin/activate
+  112  git status
+  113  git add .
+  114  git status
+  115  git commit -m "first assignment stage 1"
+  116  git push
+  117  git checkout main
+  118  git pull
+  119  git checkout -b data_modeling
+  120  git status
+  121  history
+  122  git status
+  123  git config --global user.name "rajilo""
+  124  git config --global user.name "rajilo"
+  125  lds
+  126  ls
+  127  pwd
+  128  python3 -m venv .venv
+  129  source .venv/bin/activate
+  130  brew uninstall python
+  131  brew install python=3.9.1
+  132   brew install python@3.9
+  133   brew install python3
+  134  brew install atom
+  135  atom
+  136  brew install git
+  137  git
+  138  ls
+  139  cd Documents
+  140  ls
+  141  ls
+  142  echo "# Data-pipeline-for-machine-operations" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/Data-pipeline-for-machine-operations.git\ngit push -u origin main
+  143  ls
+  144  rm -rf README.md
+  145  ld
+  146  ls
+  147  mkdir data-pipeline-machine
+  148  cd data-pipeline-machine
+  149  echo "# Data-pipeline-for-machine-operations" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/Data-pipeline-for-machine-operations.git\ngit push -u origin main
+  150  echo "# Data-pipeline-for-machine-operations" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git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@github.com:rajilo/Data-pipeline-for-machine-operations.git\ngit push -u origin main
+  151  ls
+  152  ls
+  153  cd ..
+  154  ls
+  155  cd projects
+  156  ls
+  157  mkdir project1
+  158  cd project1
+  159  ls
+  160  echo "# data-pipeline-project1" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/data-pipeline-project1.git\ngit push -u origin main
+  161  ls
+  162  cd ..
+  163  ls
+  164  mkdir data-solutions
+  165  cd data-solutions
+  166  echo "# data-systems" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/rajilo/data-systems.git\ngit push -u origin main
+  167  echo "# data-systems" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/rajilo/data-systems.git\ngit push -u origin main
+  168  echo "# data-systems" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/rajilo/data-systems.git\ngit push -u origin main
+  169  ls
+  170  sudo apt install zsh
+  171  brew install java
+  172  sudo apt install zsh
+  173  echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+  174  sudo apt install zsh
+  175  brew install openjdk@17
+  176  sudo apt install zsh
+  177  atom ~/.zshrc
+  178  chsh -s $(which zsh
+  179  chsh -s $(which zsh)
+  180  ls
+  181  clear
+  182  ls
+  183  cd Documents
+  184  ls
+  185  git clone git@github.com:rajilo/data-systems.git
+  186  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+  187  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  188  git status
+  189  history
+  190  git status
+  191  git checkout -b models-setup
+  192  git add .
+  193  git commit -m "setup models for quality control"
+  194  git push
+  195  git checkout main
+  196  git checkout -b main
+  197  git status
+  198  git add .
+  199  git commit -m "setup models for quality control"
+  200  git push
+  201  git checkoutb -b data-generation-implementation
+  202  git checkout -b data-generation-implementation
+  203  git status
+  204  git add .
+  205  git commit -m "setup models for quality control"
+  206  git push
+  207  git status
+  208  history
+  209  git status
+  210  git checkout -b models-setup
+  211  git add.
+  212  git add .
+  213  git commit -m "setup models for quality control"
+  214  git push --set-upstream origin models-setup
+  215  ls
+  216  cd Documents
+  217  ls
+  218  cd /Volumes/engineering/
+  219  ls
+  220  ld
+  221  ls
+  222  cd /Volumes/engineering
+  223  ls
+  224  cd projects-data-engineering
+  225  ls
+  226  mkdir quality-improvement
+  227  ls
+  228  cd quality-improvement
+  229  lsd
+  230  ls
+  231  echo "# quality-improvement-practice" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:rajilo/quality-improvement-practice.git\ngit push -u origin main
+  232  ls
+  233  git status
+  234  git add .
+  235  git commit -m "creating new branch"
+  236  git push
+  237  python -m venv session1
+  238  python3 -m venv session1
+  239  source session1/bin/activate
+  240  history
+  241  git status
+  242  python3 -m venv my_project_env
+  243  source my_project_env/bin/activate.
+  244  ls
+  245  cd my_project_env
+  246  source my_project_env/bin/activate.
+  247  git status
+  248  git add .
+  249  git status
+  250  git add .
+  251  git commit -m "my new project"
+  252  git push
+  253  git add .
+  254  git commit -m "added my ERD data and sql file"
+  255  git push
+  256  git status
+  257  git check -b models-setup
+  258  git checkout -b models-setup
+  259  git add .
+  260  git commit -m "models-setup"
+  261  git push
+  262  git push --set-upstream origin models-setup
+  263  git status
+  264  git add .
+  265  git push
+  266  git history
+  267  history
+  268  python3 -m venv venv
+  269  source venv/bin/activate
+  270  python3 -m venv venv
+  271  source venv/bin/activate
+  272  pip3 install pandas numpy sqlalchemy pyspark\n
+  273  pip3 install Faker\n
+  274  git add.
+  275  git init
+  276  git status
+  277  git commit -m "data generation"
+  278  git -push
+  279  git push
+  280  github.com:rajilo/quality-improvement-for-manufacturing.git\n
+  281  brew install java
+  282  brew reinstall openjdk\n
+  283  java --version
+  284  java
+  285  java -version
+  286  git status
+  287  git add.
+  288  git add
+(venv) ➜  quality-improvement-for-manufacturing git:(models-setup) ✗
+
